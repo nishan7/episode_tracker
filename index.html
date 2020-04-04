@@ -1,19 +1,80 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
 
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
-  </body>
+    <title>Episode Tracker</title>
+    <link rel="stylesheet" href="scripts/bootstrap.min.css">
+    <link rel="stylesheet" href="scripts/fa/css/font-awesome.min.css">
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <link rel="stylesheet" href="scripts/our.css">
+    <script src="scripts/index.js" type="text/javascript"></script>
+</head>
+
+<body>
+<br>
+<!--<div class="active-purple-4 mb-0 m-1">-->
+<!--    <input class="form-control" id='search-box' type="text" placeholder="Series Location?" aria-label="Search">-->
+<!--    <button class="bg-success" o type='submit'></button>-->
+<!--</div>-->
+
+<!--<div class="input-group md-form form-sm form-2 pl-0">-->
+<!--    <input class="form-control my-0 py-1 lime-border" type="text" placeholder="Search" aria-label="Search">-->
+<!--    <div class="input-group-append">-->
+<!--    <span class="input-group-text lime lighten-2" id="basic-text1"><i class="fas fa-search text-grey"-->
+<!--                                                                      aria-hidden="true"></i></span>-->
+<!--    </div>-->
+<!--</div>-->
+<form class="input-group md-form mr-1 mb-3" onsubmit="file_location();return false;">
+  <input class="form-control mr-auto ml-1 mr-1 " type="text" placeholder="search-box" id='search-box' aria-label="Search">
+  <button class="btn btn-outline-primary btn-rounded btn-md ml-1 mr-1 my-0"  type="submit">Search</button>
+</form>
+
+<!--<h3 id="h"> hello </h3>-->
+
+<div class="d-flex flex-wrap p-2" id="cards">
+</div>
+
+<!--<div>-->
+<!--    <a href="http://www.google.com">-->
+<!--        <div class="card text-black">-->
+<!--            &lt;!&ndash;        <div class="embed-responsive-item">&ndash;&gt;-->
+<!--            <img class="card-img home-page-image" src="./media/image2.jpg" alt="Card image cap">-->
+<!--            &lt;!&ndash;        </div>&ndash;&gt;-->
+
+<!--            <div class="card-img-overlay">-->
+<!--                <h5 class="card-text">title</h5>-->
+<!--                &lt;!&ndash; <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>&ndash;&gt;-->
+<!--                &lt;!&ndash; <a href="#" class="btn btn-primary">Go somewhere</a> &ndash;&gt;-->
+<!--            </div>-->
+<!--            <div class="card-footer bg-transparent border-success label">its always sunny in philadehlia s03e04 </div>-->
+<!--        </div>-->
+<!--    </a>-->
+<!--    -->
+
+<!--</div>-->
+
+
+<!-- You can also require other files to run in this process -->
+<script src="./renderer.js"></script>
+<!--<script>-->
+<!--    $("ul").append("loading nice");-->
+<!--    ipcRenderer.on('item:add', function (e, item) {-->
+<!--        $('li').append('<li>' + Text + '</li>');-->
+<!--    });-->
+<!--</script>-->
+</body>
+
 </html>
+
+<!--// ul.className = 'collection';-->
+<!--// const li = document.createElement('li');-->
+<!--// li.className = 'collection-item';-->
+<!--// const itemText = document.createTextNode(item);-->
+<!--//-->
+<!--// li.appendChild(itemText);-->
+<!--// ul.appendChild(li);-->
+
+

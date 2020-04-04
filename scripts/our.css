@@ -1,0 +1,124 @@
+.home-page-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: row;
+    /*padding-right: 20px;*/
+    /*padding-bottom: 20px;*/
+    /*margin-right: 20px;*/
+    /*margin-bottom: 20px;*/
+}
+
+.card {
+    margin: 20px;
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.head-label {
+    font-size: large;
+    font-weight: bold;
+    color: black;
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.foot-label {
+    font-size: small;
+    font-weight: bold;
+    color: #414141;
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/*.card-deck {*/
+/*    width: 300px;*/
+/*    height: 200px;*/
+/*}*/
+
+.h1 {
+    color: green;
+}
+
+.series-img {
+    width: 300px;
+    height: 200px;
+    /*height: 15vw;*/
+    object-fit: cover !important;
+}
+
+
+
+.hover {
+    border-color: rgba(82, 168, 236, .8);
+    box-shadow: 0 0px 0px rgba(82, 168, 236, .8) inset, 0 0 8px rgba(82, 168, 236, .8);
+    outline: 0 none;
+
+}
+
+@media (max-width: 800px) {
+    .series-img {
+        width: 200px;
+        height: 120px;
+        /*height: 15vw;*/
+        object-fit: cover !important;
+    }
+
+    h1 {
+        color: red;
+    }
+
+    .head-label {
+        font-size: smaller;
+        font-weight: bold;
+        color: black;
+        width: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .foot-label {
+        font-size: small;
+        font-weight: bold;
+        color: #414141;
+        width: inherit;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+
+}
+
+/*.home-page-image {*/
+/*    width: 100% !important;*/
+/*    height: 100% !important;*/
+/*    !*height: 15vw;*!*/
+/*    object-fit: cover !important;*/
+/*}*/
+
+
